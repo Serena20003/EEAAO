@@ -1,0 +1,54 @@
+body {
+  background: black;
+}
+
+#title {
+  font-family: Garamond, serif; 
+  color: yellow; 
+  position: absolute; 
+  bottom:0%; 
+  text-align: center; 
+  width:100%;
+  animation: titleOminous 30s forwards;
+}
+
+#eeaao_GIF {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  height:100%;
+}
+
+#eeaao_img {
+  width: 90%;
+  height: 100vh; 
+  left:auto;
+}
+
+#googlyEye {
+  width: 20px; 
+  position: absolute; 
+  animation: rotate 1s infinite;
+}
+
+@keyframes titleOminous {
+  0% {
+    font-size: 1px;
+  }
+  100% {
+    font-size: 175px;
+  }
+}
+
+/*  https://flaviocopes.com/rotate-image/ */
+@keyframes rotate {
+  0% {
+    transform: rotate(60deg);
+  }
+  50% {
+    transform: rotate(-60deg);
+  }
+  100% {
+    transform: rotate(60deg);
+  }
+}
